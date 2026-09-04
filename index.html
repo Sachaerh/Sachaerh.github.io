@@ -1000,12 +1000,12 @@ td:last-child,th:last-child{padding-right:0}
     <p>Once I was editing the right GPO:</p>
 
     <figure class="fig">
-      <div class="fig-frame"><img src="images/password_policy.png" alt="Group Policy Management Editor showing the Default Domain Policy password settings: 12 character minimum, 90 day maximum age, 1 day minimum age, 5 passwords remembered, complexity enabled" loading="lazy"></div>
+      <div class="fig-frame"><img src="Help%20Desk%20Lab/password_policy.png" alt="Group Policy Management Editor showing the Default Domain Policy password settings: 12 character minimum, 90 day maximum age, 1 day minimum age, 5 passwords remembered, complexity enabled" loading="lazy"></div>
       <figcaption><span class="fig-no">Fig. 01</span><span class="fig-cap">Password policy in the Default Domain Policy — 12 character minimum, 90 day maximum age, complexity enabled.</span></figcaption>
     </figure>
 
     <figure class="fig">
-      <div class="fig-frame"><img src="images/account_lockout.png" alt="Account Lockout Policy in the Default Domain Policy: 30 minute lockout duration, threshold of 5 invalid logon attempts, counter reset after 30 minutes" loading="lazy"></div>
+      <div class="fig-frame"><img src="Help%20Desk%20Lab/account_lockout.png" alt="Account Lockout Policy in the Default Domain Policy: 30 minute lockout duration, threshold of 5 invalid logon attempts, counter reset after 30 minutes" loading="lazy"></div>
       <figcaption><span class="fig-no">Fig. 02</span><span class="fig-cap">Lockout after 5 invalid attempts, 30 minute duration.</span></figcaption>
     </figure>
 
@@ -1014,7 +1014,7 @@ td:last-child,th:last-child{padding-right:0}
     password.</p>
 
     <figure class="fig">
-      <div class="fig-frame"><img src="images/password_policy_confirmed.png" alt="PowerShell output from Get-ADDefaultDomainPasswordPolicy confirming ComplexityEnabled True, LockoutThreshold 5, MaxPasswordAge 90 days and MinPasswordLength 12" loading="lazy"></div>
+      <div class="fig-frame"><img src="Help%20Desk%20Lab/password_policy_confirmed.png" alt="PowerShell output from Get-ADDefaultDomainPasswordPolicy confirming ComplexityEnabled True, LockoutThreshold 5, MaxPasswordAge 90 days and MinPasswordLength 12" loading="lazy"></div>
       <figcaption><span class="fig-no">Fig. 03</span><span class="fig-cap">Verified from PowerShell rather than trusting the GUI.</span></figcaption>
     </figure>
 
@@ -1024,7 +1024,7 @@ td:last-child,th:last-child{padding-right:0}
     <code>H:</code>.</p>
 
     <figure class="fig">
-      <div class="fig-frame"><img src="images/gpo_mapping.png" alt="HR drive mapping GPO with the H drive properties open, Action set to Update and location set to the HRShare on DC01" loading="lazy"></div>
+      <div class="fig-frame"><img src="Help%20Desk%20Lab/gpo_mapping.png" alt="HR drive mapping GPO with the H drive properties open, Action set to Update and location set to the HRShare on DC01" loading="lazy"></div>
       <figcaption><span class="fig-no">Fig. 04</span><span class="fig-cap">Drive Maps preference with Action set to Update.</span></figcaption>
     </figure>
 
@@ -1033,7 +1033,7 @@ td:last-child,th:last-child{padding-right:0}
     fails noisily if the drive is already there.</p>
 
     <figure class="fig">
-      <div class="fig-frame"><img src="images/working_new_user.png" alt="This PC on the Windows 11 client showing Sales Share mapped to the S drive under Network locations" loading="lazy"></div>
+      <div class="fig-frame"><img src="Help%20Desk%20Lab/working_new_user.png" alt="This PC on the Windows 11 client showing Sales Share mapped to the S drive under Network locations" loading="lazy"></div>
       <figcaption><span class="fig-no">Fig. 05</span><span class="fig-cap">The result on the client — Sales Share mapped to S: automatically at logon.</span></figcaption>
     </figure>
 
@@ -1046,7 +1046,7 @@ td:last-child,th:last-child{padding-right:0}
     osTicket, diagnosed, resolved, and closed with notes.</p>
 
     <figure class="fig">
-      <div class="fig-frame"><img src="images/osticket_queue.png" alt="osTicket closed queue listing three resolved tickets: New Hire, Password reset request, and Unable to log in - Account locked" loading="lazy"></div>
+      <div class="fig-frame"><img src="Help%20Desk%20Lab/osticket_queue.png" alt="osTicket closed queue listing three resolved tickets: New Hire, Password reset request, and Unable to log in - Account locked" loading="lazy"></div>
       <figcaption><span class="fig-no">Fig. 06</span><span class="fig-cap">The queue after a working session.</span></figcaption>
     </figure>
 
@@ -1056,7 +1056,7 @@ td:last-child,th:last-child{padding-right:0}
     </div>
 
     <figure class="fig">
-      <div class="fig-frame"><img src="images/osticket_lockout.png" alt="osTicket ticket 437381 from Hank Hill, subject Unable to log in - Account locked, assigned to Satya Thorp" loading="lazy"></div>
+      <div class="fig-frame"><img src="Help%20Desk%20Lab/osticket_lockout.png" alt="osTicket ticket 437381 from Hank Hill, subject Unable to log in - Account locked, assigned to Satya Thorp" loading="lazy"></div>
       <figcaption><span class="fig-no">Fig. 07</span><span class="fig-cap">The lockout ticket as submitted.</span></figcaption>
     </figure>
 
@@ -1069,7 +1069,7 @@ td:last-child,th:last-child{padding-right:0}
     has a different fix.</p>
 
     <figure class="fig">
-      <div class="fig-frame"><img src="images/password_reset.png" alt="Hank Hill Active Directory account properties with the Unlock account option showing an open padlock" loading="lazy"></div>
+      <div class="fig-frame"><img src="Help%20Desk%20Lab/password_reset.png" alt="Hank Hill Active Directory account properties with the Unlock account option showing an open padlock" loading="lazy"></div>
       <figcaption><span class="fig-no">Fig. 08</span><span class="fig-cap">The Unlock account option confirms the lockout — and the same screen rules out a disabled or expired account.</span></figcaption>
     </figure>
 
@@ -1090,7 +1090,7 @@ Unlock-ADAccount -Identity hank_sales</code></pre>
     </div>
 
     <figure class="fig">
-      <div class="fig-frame"><img src="images/forgoten_password_reset.png" alt="Reset Password dialog for Peggy Hill with User must change password at next log on checked" loading="lazy"></div>
+      <div class="fig-frame"><img src="Help%20Desk%20Lab/forgoten_password_reset.png" alt="Reset Password dialog for Peggy Hill with User must change password at next log on checked" loading="lazy"></div>
       <figcaption><span class="fig-no">Fig. 09</span><span class="fig-cap">Reset with "User must change password at next log on" checked.</span></figcaption>
     </figure>
 
@@ -1104,7 +1104,7 @@ Set-ADUser -Identity peggy_hr -ChangePasswordAtLogon $true</code></pre>
     <p>Then the policy showed up in the real world:</p>
 
     <figure class="fig">
-      <div class="fig-frame"><img src="images/working_password_policy.png" alt="Windows sign-in screen rejecting a new password for not meeting the length, complexity or history requirements of the domain" loading="lazy"></div>
+      <div class="fig-frame"><img src="Help%20Desk%20Lab/working_password_policy.png" alt="Windows sign-in screen rejecting a new password for not meeting the length, complexity or history requirements of the domain" loading="lazy"></div>
       <figcaption><span class="fig-no">Fig. 10</span><span class="fig-cap">The 12-character policy enforcing itself against a weak password at the change-password prompt.</span></figcaption>
     </figure>
 
@@ -1117,7 +1117,7 @@ Set-ADUser -Identity peggy_hr -ChangePasswordAtLogon $true</code></pre>
     </div>
 
     <figure class="fig">
-      <div class="fig-frame"><img src="images/create_user.png" alt="Create User dialog for Boomhauer, created in the Sales OU with the logon name boomhauer_sales and a forced password change at next logon" loading="lazy"></div>
+      <div class="fig-frame"><img src="Help%20Desk%20Lab/create_user.png" alt="Create User dialog for Boomhauer, created in the Sales OU with the logon name boomhauer_sales and a forced password change at next logon" loading="lazy"></div>
       <figcaption><span class="fig-no">Fig. 11</span><span class="fig-cap">New Sales account created directly in the Sales OU.</span></figcaption>
     </figure>
 
@@ -1151,7 +1151,7 @@ Set-ADUser -Identity peggy_hr -ChangePasswordAtLogon $true</code></pre>
     exist — then worked the ticket blind.</p>
 
     <figure class="fig">
-      <div class="fig-frame"><img src="images/breaking_gpo.png" alt="Sales drive mapping GPO with the location field edited to SalesShare2 on DC01, a share that does not exist" loading="lazy"></div>
+      <div class="fig-frame"><img src="Help%20Desk%20Lab/breaking_gpo.png" alt="Sales drive mapping GPO with the location field edited to SalesShare2 on DC01, a share that does not exist" loading="lazy"></div>
       <figcaption><span class="fig-no">Fig. 12</span><span class="fig-cap">The deliberate break: a valid GPO pointing at an invalid target.</span></figcaption>
     </figure>
 
@@ -1462,7 +1462,10 @@ gpresult /h C:\gpreport.html     <span class="c"># Full report, including failur
     });
   });
 
-  /* Any screenshot that isn't in /images yet shows the filename it wants,
+  /* Screenshots live in the "Help Desk Lab" folder. To move them to a
+     cleaner path later, upload them to images/ and find-replace
+     "Help%20Desk%20Lab/" with "images/" in this file.
+     Any screenshot that is missing shows the filename it wants,
      so the page stays readable until the file is dropped in. */
   document.querySelectorAll('.fig img').forEach(function (img) {
     img.addEventListener('error', function () {
